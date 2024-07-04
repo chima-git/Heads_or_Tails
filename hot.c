@@ -9,6 +9,11 @@ const char* coin_toss() {
 int main() {
     srand(time(NULL));
 
+    char name[100];
+    printf("Who are you? \n> ");
+    scanf("%s", name);
+    printf("Hello, %s!\n", name);
+
     printf("Tossing a coin...\n");
     const char* results[3];
     int hcount = 0;
