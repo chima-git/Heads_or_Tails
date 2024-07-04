@@ -30,10 +30,12 @@ int main() {
     }
 
     printf("Heads: %d, Tails: %d\n", hcount, tcount);
+
     if (heads_count > tails_count) {
-        printf("You won!\n");
+        printf("%s won!\n", name);
     } else {
-        printf("You lost!\n");
+        printf("%s lost!\n", name);
     }
+
     return 0;
 }
